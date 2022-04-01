@@ -1,0 +1,175 @@
+@import url(common.css);
+
+@font-face{
+  font-family:YouandiModernTR;
+  src: url('../font/YouandiModernTR.woff') format('woff'); 
+}
+
+body{
+  font-family: YouandiModernTR;
+  background: #f9f9f9;
+}
+
+/* top btn */
+#top_btn{
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  z-index: 1000;
+}
+
+#top_btn a.active{
+  background: url(../image/top_btn_out.png) no-repeat;
+  width: 60px;
+  height: 60px;
+  display: block;
+  transition: all 0.5s;
+}
+
+#top_btn a.active:hover{
+  background: url(../image/top_btn_in.png) no-repeat;
+}
+
+#wrap{width: 100%;}
+
+/* ||| header ||| */
+header{
+  width: 1200px; 
+  height: 50px;
+  margin: 10px auto;
+}
+
+/* logo */
+.logo{float: left; margin-right: 30px;}
+
+.logo img{
+  width: 200px;
+  height: 50px;
+}
+
+/* navbar */
+nav ul li{
+  float: left;
+  display: flex;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 50px;
+  margin-right: 40px;
+  position: relative;
+}
+
+nav ul li a{z-index: 200;}
+
+nav ul li span{
+  display: block;
+  width: 0;
+  height: 20px;
+  opacity: 0;
+  background: #c3cf19;
+  position: absolute;
+  top: 15px;
+  border-radius: 30%;
+  transition: all 0.3s;
+}
+
+nav ul li:hover span{
+  width: 100%;
+  opacity: 1;
+}
+
+/* input */
+.input{
+  float: left;
+  line-height: 50px;
+  position: relative;
+}
+
+.material-icons{
+  position: absolute;
+  top: 15px;
+  right: 62%;
+  color: #666;
+}
+
+input{
+  width: 260px;
+  height: 30px;
+  border-radius: 15px;
+  border: 1px solid #ccc;
+  outline: none;
+  text-indent: 40px;
+  margin-left: 100px;
+}
+
+/* visual */
+#visual{
+  background: url(../image/main_visual_green.png) no-repeat center center;
+  background-color: black;
+  width: 100%;
+  height: 600px;
+  margin: 0 auto;
+  position: relative;
+  transition: all 2s;
+}
+
+#visual:hover{
+  background: url(../image/main_visual_black.png) no-repeat center center;
+}
+
+@keyframes moving{
+  from{top: 60px; left: 370px; opacity: 1;}
+  to{left: 450px; opacity: 0;}
+}
+
+.visual_text{
+  font-size: 60px;
+  font-weight: bold;
+  color: #f9f9f9;
+  position: absolute;
+  top: 60px;
+  left: 370px;
+  line-height: 60px;
+  letter-spacing: -3px;
+  animation: moving 3s infinite alternate;
+}
+
+.visual_text2{
+  font-weight: 100;
+  font-size: 40px;
+}
+
+/* next prev btn */
+.next_btn{
+  position: fixed;
+  right: 400px;
+  top: 35%;
+  z-index: 1000;
+}
+
+.next_btn a.active{
+  background: url(../image/next_btn.png) no-repeat;
+  width: 80px;
+  height: 80px;
+  display: block;
+  transition: all 0.3s;
+}
+
+.next_btn a.active:hover{background:url(../image/next_btn_in.png) no-repeat;}
+
+
+.prev_btn{
+  position: fixed;
+  left: 300px;
+  top: 35%;
+  z-index: 1000;
+}
+
+.prev_btn a.active{
+  background: url(../image/prev_btn.png) no-repeat;
+  width: 80px;
+  height: 80px;
+  display: block;
+  transition: all 0.3s;
+}
+
+.prev_btn a.active:hover{background: url(../image/prev_btn_in.png) no-repeat;}
