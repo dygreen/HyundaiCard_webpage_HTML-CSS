@@ -11,7 +11,7 @@
   <!-- top btn -->
   <div id="top_btn"><a href="#" class="active"></a></div>
 
-  <div id="wrap">
+  <div id="wrap"> 
     <!-- header -->
     <header>
      <div class="topMenu clear">
@@ -31,8 +31,8 @@
         </nav>
         <!-- input -->
         <div class="input">
-          <span class="material-icons">search</span>
-          <input type="text" placeholder="카드,메뉴,혜택을 검색해 보세요😊">
+          <label for="search"><span class="material-icons">search</span></label>
+          <input id="search" type="text" placeholder="카드,메뉴,혜택을 검색해 보세요😊">
         </div>
      </div>
     </header>
@@ -40,7 +40,10 @@
 
     <!-- visual -->
     <div id="visual">
-      <span class="visual_text"><span class="visual_text2">자유와 모험을 즐기는,</span> <br>나의 첫 럭셔리 카드</span>
+      <span class="visual_text">
+        <span class="small_text">자유와 모험을 즐기는,</span> <br>나의 첫 럭셔리 카드
+      </span>
+      <span class="visual_text2">the Green Edition2</span>
       <!-- next prev btn -->
       <div class="nextPrev">
         <div class="next_btn"><a href="#" class="active"></a></div>
@@ -51,10 +54,71 @@
 
     <!-- section -->
     <section>
-      <div id="card"></div>
+      <!-- Card -->
+      <div id="card">
+        <div class="title">Cards</div>
+        <ul class="clear">
+          <!-- card 1 -->
+          <li>
+            <div class="block"> <!-- 검정 배경 -->
+              <p>연회비</p>
+              <p>VISA 150,000원</p>
+              <p>MasterCard 150,000원</p>
+              <p>국내전용 150,000원</p>
+            </div>
+            <img src="/image/card1.png" alt="card">
+            <p class="card_name">the Green Edition2</p> <!-- 카드 이름 -->
+          </li>
+          <!-- card 2 -->
+          <li>
+            <div class="block">
+              <p>연회비</p>
+              <p>VISA 150,000원</p>
+              <p>MasterCard 150,000원</p>
+              <p>국내전용 150,000원</p>
+            </div>
+            <img src="/image/card2.png" alt="card">
+            <p class="card_name">the Pink</p>
+          </li>
+          <!-- card 3 -->
+          <li>
+            <div class="block">
+              <p>연회비</p>
+              <p>VISA 90,000원</p>
+              <p>MasterCard 90,000원</p>
+              <p>국내전용 90,000원</p>
+            </div>
+            <img src="/image/card3.png" alt="card">
+            <p class="card_name">M3 BOOST</p>
+          </li>
+          <!-- card 4 -->
+          <li>
+            <div class="block">
+              <p>연회비</p>
+              <p>VISA 150,000원</p>
+              <p>MasterCard 150,000원</p>
+              <p>국내전용 150,000원</p>
+            </div>
+            <img src="image/card4.png" alt="card">
+            <p class="card_name">MX Black</p>
+          </li>
+          <!-- more btn -->
+          <li>
+            <button>+</button>
+          </li>
+        </ul>
+      </div>
+
+      <!-- benefit -->
       <div id="benefit"></div>
+
+      <!-- finance -->
       <div id="finance"></div>
+
+      <!-- culture -->
       <div id="culture"></div>
+
+      <!-- customer -->
       <div id="customer"></div>
     </section>
 
