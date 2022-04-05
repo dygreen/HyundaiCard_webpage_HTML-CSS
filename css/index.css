@@ -8,6 +8,7 @@
 body{
   font-family: YouandiModernTR;
   background: #f9f9f9;
+  color: #333;
 }
 
 button{
@@ -122,7 +123,7 @@ input{
   height: 600px;
   margin: 0 auto;
   position: relative;
-  transition: all 2s;
+  transition: all 1s ease-out;
 }
 
 #visual:hover{
@@ -178,7 +179,6 @@ input{
   opacity: 0;
 }
 
-
 /* next prev btn */
 .next_btn{ /* next btn */
   position: absolute;
@@ -197,7 +197,6 @@ input{
 
 .next_btn a.active:hover{background:url(../image/next_btn_in.png) no-repeat;}
 
-
 .prev_btn{ /* prev btn */
   position: absolute;
   left: 200px;
@@ -215,12 +214,13 @@ input{
 
 .prev_btn a.active:hover{background: url(../image/prev_btn_in.png) no-repeat;}
 
+
 /* ||| section ||| */
 /* section 전체 설정 */
 #card, #benefit, #finance, #culture, #customer{width: 1200px; margin: 30px auto;}
 
 .title{
-  font-size: 50px;
+  font-size: 60px;
   text-shadow: 4px 4px 0px rgba(0,0,0,0.2);
   font-weight: bold;
   margin: 50px 0 50px;
@@ -229,10 +229,12 @@ input{
 /* 1. Card */
 #card .title{margin-top: 50px;}
 
+#card ul{margin-left: 80px;}
+
 #card ul li{
   float: left;
-  margin-right: 80px;
-  margin-left: 20px;
+  margin-right: 60px;
+  margin-left: 22px;
 }
 
 #card ul li img{
@@ -283,7 +285,6 @@ input{
 	opacity: 1;
 }
 
-
 #card .card_name{
   font-size: 16px;
   font-weight: bold;
@@ -292,7 +293,6 @@ input{
 }
 
 /* more btn */
-
 #card ul li button{
   color: #000; 
   font-size: 40px;
@@ -302,7 +302,7 @@ input{
   border-radius: 50%;
   padding: 0 11px;
   border: 1px solid #999;
-  margin: 100px 30px; /* 위치 조절 */
+  margin: 100px 40px; /* 위치 조절 */
   transition: all 0.3s;
 }
 
@@ -324,8 +324,10 @@ input{
 
 #benefit .title{
   padding-top: 50px;
-  transition: all 0.4s;
+  text-align: center;
 }
+
+#benefit ul{margin-left: 80px;}
 
 #benefit ul li{
   float: left;
@@ -364,8 +366,10 @@ input{
 }
 
 
-/*  ||| finance ||| */
-#finance{position: relative;}
+/* 3. finance */
+#finance{position: relative; margin-top: 100px; margin-bottom: 150px;}
+
+#finance .title{margin-bottom: 0;}
 
 #finance .describe{
   text-align: center;
@@ -384,34 +388,34 @@ input{
 
 #finance .bubble{
   cursor: pointer;
-  animation: bubble 1.8s infinite alternate;
+  animation: bubble 2s infinite alternate;
   position: absolute;
   top: 10px;
   right: 300px;
 }
 
 #finance .textBubble{
-  background: url(../image/text_bubble.png) no-repeat;
-  background-size: 150px;
-  width: 150px;
-  height: 150px;
-  position: absolute;
-  top: 10px;
-  right: 10px;
+  background: url(../image/bubble.png) no-repeat;
+  background-size: 200px;
+  width: 200px;
+  height: 100px;
+  position: relative;
+  top: 0;
+  left: 60px;
 }
 
 #finance .textBubble span{
   position: absolute;
-  top: 32px;
-  right: 32px;
-  font-size: 22px;
-  font-weight: bold;
-  line-height: 28px;
+  right: 26px;
+  font-size: 18px;
+  line-height: 100px;
   text-align: center;
   color: #f9f9f9;
 }
 
 /* finance 1~4 배경 설정 */
+#finance ul{margin-left: 20px;}
+
 #finance li{
   margin-top: 40px; 
   float: left;
@@ -447,15 +451,319 @@ input{
   background-size: 300px;
   width: 300px;
   height: 300px;
-
 }
 
 /* finace text 설정 */
+#finance .block p{color: #333;}
+
 #finance .text1{
   font-size: 16px;
+  margin-bottom: 3px;
 }
-#finance .text2{}
-#finance .text3{}
-#finance .text4{}
-#finance .text5{}
-#finance .text6{}
+
+#finance .text2{
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 26px;
+  margin-bottom: 20px;
+}
+
+#finance p.text3{color: #666;}
+
+#finance .text4{
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  letter-spacing: -1px;
+}
+
+#finance p.text5{color: #666;}
+
+#finance .text6{
+  font-size: 22px;
+  font-weight: bold;
+}
+
+#finance .block1 .text_group{text-align: left;}
+
+#finance .block2 .text_group{text-align: center;}
+
+#finance .block3 .text_group{text-align: right;}
+
+#finance button{ /* btn 전체 설정 */
+  margin-top: 20px;
+  padding: 7px 30px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #f9f9f9;
+  transition: all 0.3s;
+}
+
+#finance button.btn1{ /* btn 1 */
+  background: #d6b611;
+}
+
+#finance button.btn1:hover{background: #b59c20;}
+
+#finance button.btn2{ /* btn 2 */
+  background: #5b775f;
+}
+
+#finance button.btn2:hover{background: #35593a;}
+
+#finance button.btn3{ /* btn 3 */
+  background: #e68600;
+  margin-right: 30px;
+}
+
+#finance button.btn3:hover{background: #d78109;}
+
+
+/* 4. culture */
+#culture{margin-bottom: 150px;}
+
+#culture .title{
+  text-align: right;
+  margin-top: 100px;
+  transition: all 0.3s;
+  margin-bottom: 60px;
+}
+
+#culture .title span{
+  font-size: 35px;
+  text-shadow: none;
+}
+
+#culture .title:hover{color: #13b400;} 
+
+/* culture 1~4 전체 설정(text, img) */
+#culture ul li{
+  height: 450px;
+  float: left;
+  position: relative;
+  border-right: 2px solid #ccc;
+  padding: 0 10px;
+}
+
+#culture ul li:last-child{border: none; padding-right: 0;}
+
+/* 밑줄 hover 효과 */
+#culture .text_top{position: relative;}
+
+#culture .text1 span{
+  position: absolute;
+  border: 2px solid #13b400;
+  width: 0;
+  top: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: all 0.4s;
+}
+
+#culture .text1:hover span{
+  width: 100%;
+  opacity: 1;
+  border: 2px solid #13b400;
+}
+
+#culture .text1{
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+#culture .text2{
+  font-size: 18px;
+  margin-bottom: 5px;
+  line-height: 22px;
+}
+
+#culture img{
+  width: 280px; 
+  height: 300px;
+  cursor: pointer;
+}
+
+#culture .text3, .text4, .text5{
+  font-family: 'Nanum Gothic', sans-serif;
+  margin: 5px 0;
+}
+
+#culture .text3{
+  font-size: 16px;
+  font-weight: bold;
+}
+
+#culture .text4{color: #999;}
+
+#culture .text5{
+  font-weight: bold;
+  color: #666;
+}
+
+/* 검정배경 */
+#culture .img_block div{
+  position: absolute;
+  background: rgba(0,0,0,0.8);  
+}
+
+#culture .img_block .block{
+  width: 280px;
+  height: 300px;
+  color: #f9f9f9;
+  font-size: 18px;
+  letter-spacing: 2px;
+  text-align: center;
+  line-height: 300px;
+  opacity: 0;
+  transform: scale(0,0);
+  transition: all 0.5s;
+}
+
+#culture .img_block:hover .block{
+  transform: scale(1,1);
+  opacity: 1;
+  cursor: pointer;
+}
+
+
+/* 5. customer */
+#customer{
+  width: 100%;
+  background: #e7e7e7;
+}
+
+#customer .customer_back{
+  width: 1200px; 
+  height: 500px;
+  margin: 0 auto;
+}
+
+#customer .title{
+  font-size: 40px;
+  text-align: center;
+  padding: 40px;
+  text-shadow: none;
+  margin-bottom: 0;
+}
+
+#customer ul{text-align: center;}
+
+#customer ul li{
+  float: left;
+  width: 300px;
+  height: 300px;
+  background: #f9f9f9;
+  margin-right: 80px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+/* customer 1 ~ 4 전체 설정 */
+#customer li img{
+  background-size: 80px; 
+  width: 80px; 
+  height: 80px;
+  cursor: pointer;
+  margin: 20px;
+}
+
+#customer .text{
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 30px;
+  margin-bottom: 30px;
+}
+
+#customer .info{
+  font-family: 'Nanum Gothic', sans-serif;
+  font-size: 16px;
+  color: #0080ff;
+  cursor: pointer;
+  position: relative;
+}
+
+/* info hover 효과 */
+#customer .info1 span{ /* info1 hover */
+  position: absolute;
+  display: block;
+  top: 35px;
+  left: 0;
+  width: 97px;
+  height: 2px;
+  background: #0080ff;
+  opacity: 0;
+  transition: all 0.4s;
+}
+
+#customer .info1:hover span{
+  top: 20px;
+  opacity: 1;
+}
+
+
+#customer .info2 span{ /* info2 hover */
+  position: absolute;
+  display: block;
+  top: 35px;
+  left: 82px;
+  width: 138px;
+  height: 2px;
+  background: #0080ff;
+  opacity: 0;
+  transition: all 0.4s;
+}
+
+#customer .info2:hover span{
+  top: 20px;
+  opacity: 1;
+}
+
+#customer .info3 span{ /* info3 hover */
+  position: absolute;
+  display: block;
+  top: 35px;
+  right: 0;
+  width: 172px;
+  height: 2px;
+  background: #0080ff;
+  opacity: 0;
+  transition: all 0.4s;
+}
+
+#customer .info3:hover span{
+  top: 20px;
+  opacity: 1;
+}
+
+/* block 1 */
+#customer .block1{
+  margin-left: 50px;
+  border-radius: 100px 0 0 0;
+}
+
+#customer .icon1{text-align: right;}
+
+#customer .text1 span{color: #5c5eaa;}
+
+#customer .text1, .info1{
+  text-align: left;
+  margin-left: 30px;
+}
+
+/* block 2 */
+#customer .text2 span{color: #fb4513;}
+
+/* block 3 */
+#customer .block3{border-radius: 0 0 100px 0;}
+
+#customer .icon3{text-align: left;}
+
+#customer .text3, .info3{
+  text-align: right;
+  margin-right: 30px;
+}
+
+#customer .text3 span{color: #43b981;}
+
