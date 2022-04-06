@@ -9,3 +9,4 @@
 * transition 기능
 * animation 기능
 * top 버튼(버튼 클릭시 페이지 가장 상단으로 올라가는) 기능
+* 간단한 icon 제작(photoshop)
