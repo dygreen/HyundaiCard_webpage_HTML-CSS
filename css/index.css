@@ -250,9 +250,7 @@ input{
 
 #card ul li:nth-child(4){margin-right: 0;}
 
-#card li:hover img{
-  transform: translateX(40px);
-}
+#card li:hover img{transform: translateX(40px);}
 
 /* 검정 배경 설정 */
 #card li .block{ 
@@ -306,9 +304,7 @@ input{
   transition: all 0.3s;
 }
 
-#card ul li button:hover{
-  color: #999;
-}
+#card ul li button:hover{color: #999;}
 
 /* 2. benefit */
 #benefit{
@@ -329,9 +325,7 @@ input{
 
 #benefit ul{margin-left: 80px;}
 
-#benefit ul li{
-  float: left;
-}
+#benefit ul li{float: left;}
 
 #benefit ul img{
   width: 300px;
@@ -367,7 +361,11 @@ input{
 
 
 /* 3. finance */
-#finance{position: relative; margin-top: 100px; margin-bottom: 150px;}
+#finance{
+  position: relative; 
+  margin-top: 100px; 
+  margin-bottom: 150px;
+}
 
 #finance .title{margin-bottom: 0;}
 
@@ -633,6 +631,7 @@ input{
 #customer{
   width: 100%;
   background: #e7e7e7;
+  margin-bottom: 150px;
 }
 
 #customer .customer_back{
@@ -659,6 +658,17 @@ input{
   margin-right: 80px;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
+
+/* block hover 효과 */
+@keyframes shaking{
+  0% {transform: rotate(0deg);}
+  25% {transform: rotate(-3deg);}
+  50% {transform: rotate(3deg);}
+  75% {transform: rotate(-3deg);}
+  100% {transform: rotate(0deg);}
+}
+
+#customer ul li:hover{animation: shaking 0.6s infinite;}
 
 /* customer 1 ~ 4 전체 설정 */
 #customer li img{
@@ -701,7 +711,6 @@ input{
   top: 20px;
   opacity: 1;
 }
-
 
 #customer .info2 span{ /* info2 hover */
   position: absolute;
@@ -767,3 +776,60 @@ input{
 
 #customer .text3 span{color: #43b981;}
 
+/* ||| footer ||| */
+footer{
+  width: 100%;
+  border-top: 1px solid #666;
+  padding: 30px;
+  background: #fefefe;
+}
+
+.footer_group{
+  width: 1200px;
+  margin: 0 auto;
+  font-family: 'Nanum Gothic', sans-serif;
+  position: relative;
+}
+
+footer .number{
+  float: left;
+  margin-left: 50px;
+}
+
+footer li{
+  font-size: 16px;
+  line-height: 22px;
+}
+
+footer li span{
+  font-weight: bold;
+  display: inline-block;
+  width: 100px;
+  text-align: right;
+  margin-right: 20px;
+}
+
+footer .address_group{
+  float: left;
+  position: absolute;
+  top: 5px;
+  left: 350px;
+}
+
+footer img{
+  background-size: 200px;
+  width: 170px;
+  height: 50px;
+  margin-left: 200px;
+  cursor: pointer;
+}
+
+footer .address{
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 100px;
+  margin-top: 10px;
+  line-height: 18px;
+}
