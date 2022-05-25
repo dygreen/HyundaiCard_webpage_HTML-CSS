@@ -1,6 +1,7 @@
 # HyundaiCard_webpage_HTML-CSS
 >HTML과 CSS만으로 '현대카드' 웹페이지 구현하기
-[개인 프로젝트: 2022.04.01~2022.04.06]
+>
+> [개인 프로젝트: 2022.04.01~2022.04.06]
 
 주소: http://pdyhosting.dothome.co.kr/hyundaicard/index.html
 
