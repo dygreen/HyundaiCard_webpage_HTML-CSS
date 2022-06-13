@@ -3,7 +3,7 @@
 >
 > [개인 프로젝트: 2022.04.01~2022.04.06]
 
-주소: http://pdyhosting.dothome.co.kr/hyundaicard/index.html
+주소: https://dygreen.github.io/hyundaicard/index.html
 
 ## Info
 * 책갈피(메뉴바에서 메뉴 요소를 클릭하면 해당 콘텐츠를 보여주는) 기능
