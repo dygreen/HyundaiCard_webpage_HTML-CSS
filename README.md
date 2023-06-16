@@ -15,4 +15,4 @@
 * top 버튼(버튼 클릭시 페이지 가장 상단으로 올라가는) 기능
 * 간단한 icon 제작(photoshop)
 
-#### _* 자세한 프로젝트 실행과정 정리 (노션: https://prickle-turn-785.notion.site/71de414a9aa94c7ea9beb98e7812b705)_
+#### _* 자세한 프로젝트 실행과정 정리 ([노션](https://dygreen.notion.site/677f0d9f4cc744febe14d7915bf1d2bd))_
